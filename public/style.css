@@ -7,9 +7,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'IBM Plex Serif', serif;
+  font-family: 'Raleway', sans-serif;
   color: var(--textc);
-  font-weight: 800;
+  font-weight: normal;
 }
 body {
   background-color: var(--bgc);
@@ -25,11 +25,11 @@ body {
   display: flex;
   width: 1000px;
   height: 500px;
-  background-color: var(--mainc);
-  border-radius: 10px;
   justify-content: top;
   align-items: center;
   flex-direction: column;
+  background-color: var(--mainc);
+  border-radius: 10px;
 }
 .title {
   padding: 20px;
@@ -44,8 +44,11 @@ body {
   border: 2px solid #dadada;
 }
 .post {
-  background-color: transparent;
-  border: none;
+  width: 50px;
+  height: 40px;
+  border-radius: 10px;
+  border: 3px solid #dadada;
+  background-color: rgb(0, 255, 76);
 }
 .cell-container {
   display: flex;
@@ -55,8 +58,18 @@ body {
 }
 .cell {
   display: flex;
-  width: 500%;
+  justify-content: center;
+  align-items: flex-end;
+  max-width: 1000%;
+  border-radius: 4px;
   text-align: center;
   padding: 10px;
+  margin: 5px;
   background-color: #fff;
+}
+.close-cell-btn {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(218, 70, 50);
+  border-radius: 3px;
 }
